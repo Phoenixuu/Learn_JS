@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bai 11 JavaScript</title>
+</head>
+<body>
+	<p id = "demo"></p>
+	<script type="text/javascript">
+		
+		var person = {
+			firstName: "Tran",
+			lastName:"Dung",
+			age: 25,
+			gender: "Male",
+			adress: "Hanoi",
+			smile: function(){
+				return "Hahahahaha....";
+			},
+			gotoschool: function(){
+				return "By bus";
+			},
+			eatBreakfast: function(){
+				return "Very quickly";
+			},
+			fullName: function() {
+				return this.firstName + " " + this.lastName;
+			}
+
+		}
+		person.firstName = "Hoang";
+		person.lastName = "Truong";
+		person.adress = "Hanoi";
+		document.getElementById("demo").innerHTML = person.adress;
+	</script>
+
+</body>
+</html>

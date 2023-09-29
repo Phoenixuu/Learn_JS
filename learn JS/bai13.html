@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bai 13 JavaScript</title>
+</head>
+<body>
+	<p id = "demo"></p>
+	<script type="text/javascript">
+		//Object's Methods
+
+		var person = {
+			firstName: "Trần",
+			lastName: "Dũng",
+			age: 21,
+			move: function(){
+				return "Walk step by step"
+			},
+			fullName: function(){
+				return this.firstName + ' ' + this.lastName;
+			}
+		}
+
+		//ObjectName.objectMethod()
+
+		// add methods to object: objectName.newMethodName = function(){....};
+		person.laugh = function() {
+			return "Hahahahaha!!!";
+		}
+
+		person.dream = function() {
+			return "Electronic Engineer ";
+		}
+
+		document.getElementById("demo").innerHTML = "Full Name: " + person.fullName() + ", laugh " + person.laugh() + ", job: " + person.dream() ;
+
+	</script>
+
+</body>
+</html>

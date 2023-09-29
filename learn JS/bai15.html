@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bai 15 JavaScript</title>
+</head>
+<body>
+	<p id = "demo"></p>
+	<script type="text/javascript">
+		// String methods
+
+		var brands = "Đây là đài tiếng nói Việt Nam"
+
+		// document.getElementById("demo").innerHTML = brands.toUpperCase(); //viết hoa toàn bộ string
+		// document.getElementById("demo").innerHTML = brands.toLowerCase(); //viết thường toàn bộ string
+		// document.getElementById("demo").innerHTML = brands.indexOf("nói"); //tìm vị trí 
+		// document.getElementById("demo").innerHTML = brands.lastIndexOf("đài"); // tìm chữ số cuối cùng của chữ
+
+		// var arr = brands.split(' '); //Tách phần tử 
+		// document.getElementById("demo").innerHTML = arr + ", type: " + typeof arr; // tìm từ trái sang phải
+		// document.getElementById("demo").innerHTML = brands.length + "<br>" + brands.trim().length; // loại bỏ khoasgnr trắng đầu và cuối
+		document.getElementById("demo").innerHTML = brands.replace("Việt", "Nam");
+	</script>
+
+</body>
+</html>

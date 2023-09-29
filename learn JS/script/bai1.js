@@ -1,0 +1,1 @@
+alert("Chăm chỉ đi bạn êi");
